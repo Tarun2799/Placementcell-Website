@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/pages/Resp.css">
+    <!-- <link rel="stylesheet" href="/pages/about.css"> -->
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/* font */
+
+:root{
+    --main-bg-color:#9f024b;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--main-bg-color);
+    font-family: 'Barlow', sans-serif;
+    /* position: fixed; */
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    /* in my code it didn't do anything. */
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 444px;
+    height: 67px;
+    /* not seen the addition of padding. */
+    /* margin: 0 10px; */
+}
+nav ul{
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    /* for adding padding in home etc. */
+    padding: 0 23px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    /* to remove underline. */
+}
+
+nav ul li a:hover{
+    font-weight: bolder;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    height: 20px;
+    width: 350px;
+    border-radius: 5px;
+    margin: 0 15px 0 330px;
+    padding: 0 12px;
+}
+
+.search button{
+    font-family: 'Barlow', sans-serif;
+}
+
+.search button:hover{
+    font-weight: bolder;
+}
+
+.btn{
+    padding: 1px 3.5px;
+    color: white;
+    background-color: var(--main-bg-color);
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.box{
+    background-color: rgba(169, 135, 174, 0.371);
+    min-height: 80.5vh;
+    min-width: 50vw;
+}
+.flex-all-centre{
+    display: flex;
+    /* for horizontal */
+    justify-content: center;
+    /* for vertical */
+    align-items: center;
+}
+
+.box1{
+    margin: 0 150px 0 150px;
+    padding: 70px;
+    background-color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.box2{
+    margin: 0 150px 0 150px;
+    padding: 70px;
+    background-color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+}
+p{
+    padding: 15px 0 0 0;
+}
+
+footer{
+    height: 7vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/Image/logo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="/index.html" target="_blank">Home</a></li>
+                <li><a href="About.html" target="_blank">About</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" placeholder="Search here">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="box">
+        <div class="box1">
+        <h1>About Institute of Informatics and communication</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis cum laborum, odit eum aliquam quod consectetur quo itaque provident ducimus non ex possimus id fuga quisquam repellendus ad laboriosam, quidem beatae quaerat modi aut deleniti. Ullam neque minus, nostrum ipsa mollitia doloribus dolores! Nesciunt, libero similique? Reprehenderit blanditiis sed perferendis harum? Illum similique molestiae laboriosam dolore pariatur deleniti. Sapiente, quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa, nihil cupiditate magni optio, maxime tempora iste ipsum neque soluta adipisci cumque quo omnis temporibus officiis nobis impedit repudiandae libero dolores. Sunt quo alias voluptas, dolorem incidunt expedita iste culpa reprehenderit nulla nemo sequi, repellat molestias perspiciatis facere, qui possimus.</p>
+        </div>
+
+        <div class="box2">
+            <h1>About the Placement cell</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis cum laborum, odit eum aliquam quod consectetur quo itaque provident ducimus non ex possimus id fuga quisquam repellendus ad laboriosam, quidem beatae quaerat modi aut deleniti. Ullam neque minus, nostrum ipsa mollitia doloribus dolores! Nesciunt, libero similique? Reprehenderit blanditiis sed perferendis harum? Illum similique molestiae laboriosam dolore pariatur deleniti. Sapiente, quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa, nihil cupiditate magni optio, maxime tempora iste ipsum neque soluta adipisci cumque quo omnis temporibus officiis nobis impedit repudiandae libero dolores. Sunt quo alias voluptas, dolorem incidunt expedita iste culpa reprehenderit nulla nemo sequi, repellat molestias perspiciatis facere, qui possimus.</p>
+            </div>
+            </div>
+    </main>
+
+    <footer class="flex-all-centre">
+        <!-- Class work on conatiner not on item,(dis:flex) -->
+        <p>Copyright &copy; Placementcell IIC, UDSC  </p>
+    </footer>
+    
+</body>
+</html>
